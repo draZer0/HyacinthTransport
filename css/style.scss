@@ -87,3 +87,28 @@ nav {
 }
 
 // DISTRIBUTIE
+.distributie-container {
+    margin: $default-gap*3;
+    
+    .distributie {
+        display: flex;
+        justify-content: center;
+
+        &__text {
+            background-color: $color-green;
+            width: 800px;
+            height: 800px;
+            margin-top: -40px;
+            margin-bottom: 800px;
+        }
+
+        &__image {
+            background-image: url("../img/loods_binnen_2.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 720px;
+            height: 720px;
+        }
+    }
+}
