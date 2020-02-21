@@ -1,0 +1,16 @@
+// Partials and import
+@use 'assets/reset';
+@use 'assets/animate';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+// Variables
+$default-font: 'Open Sans', sans-serif; 
+$default-gap: 40px;
+
+
+
+// Styling
+// BASE
+body {
+    font-family: $default-font;
+} 
