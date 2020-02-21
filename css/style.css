@@ -1441,10 +1441,8 @@ nav .nav-container .navbar__links a:last-child:hover {
   height: 500px;
 }
 
-.distributie-container {
-  margin: 120px;
-}
 .distributie-container .distributie {
+  margin: 120px;
   display: flex;
   justify-content: center;
 }
