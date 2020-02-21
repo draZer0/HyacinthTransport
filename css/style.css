@@ -1383,4 +1383,60 @@ html, body {
 }
 body {
   font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  background-color: red;
+}
+
+nav {
+  background-color: white;
+}
+nav .nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+nav .nav-container .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-container .navbar__logo img {
+  width: 150px;
+}
+nav .nav-container .navbar__links {
+  display: flex;
+  align-items: center;
+}
+nav .nav-container .navbar__links a {
+  text-decoration: none;
+  color: #238138;
+  line-height: 2.5em;
+  border-bottom: 3px solid #fff;
+  transition: border-bottom 0.2s ease-in-out;
+}
+nav .nav-container .navbar__links a:hover {
+  border-bottom: 3px solid #238138;
+}
+nav .nav-container .navbar__links a:not(:last-child) {
+  margin-right: 20px;
+}
+nav .nav-container .navbar__links a:last-child {
+  color: #fff;
+  background-color: #238138;
+  padding: 0 10px;
+  transition: all 0.2s ease-in-out;
+}
+nav .nav-container .navbar__links a:last-child:hover {
+  border: 3px solid #238138;
+  background-color: #fff;
+  color: #238138;
+  transform: scale(1.1);
+}
+
+.banner-container {
+  background-image: url("../img/loods_binnen.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
 }

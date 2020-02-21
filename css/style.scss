@@ -7,10 +7,83 @@
 $default-font: 'Open Sans', sans-serif; 
 $default-gap: 40px;
 
+$color-green: rgb(35, 129, 56);
 
 
 // Styling
 // BASE
 body {
     font-family: $default-font;
+    box-sizing: border-box;
+    background-color: red; //debug
 } 
+
+// NAV
+nav {
+    background-color: white;
+
+    .nav-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: $default-gap/2;
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+
+            &__logo {
+                
+                img {
+                    width: 150px;
+                }
+            }
+
+            &__links {
+                display: flex;
+                align-items: center;
+
+                a {
+                    text-decoration: none; 
+                    color: $color-green;
+                    line-height: 2.5em;
+                    border-bottom: 3px solid #fff;
+                    transition: border-bottom .2s ease-in-out;
+
+                    &:hover {
+                        border-bottom: 3px solid $color-green;
+                    }
+                }
+
+                a:not(:last-child) {
+                    margin-right: $default-gap/2;
+                }
+
+                a:last-child {
+                    color: #fff;
+                    background-color: $color-green;
+                    padding: 0 $default-gap/4;
+                    transition: all .2s ease-in-out;
+
+                    &:hover {
+                        border: 3px solid $color-green;
+                        background-color: #fff;
+                        color: $color-green;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// BANNER
+.banner-container {
+    background-image: url("../img/loods_binnen.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+// DISTRIBUTIE
